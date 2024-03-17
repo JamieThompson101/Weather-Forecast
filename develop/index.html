@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" type="text/css" href="./develop/assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="row" id="head-row">
+            <div class="column">
+                <div class="row" id="title-date">
+                    <div class="column column-60" id="pg-title"><h1>Weather Forecast </h1></div>
+                    <div class="column" id="pg-date"><h2 id="todayDate">Date:</h2></div>
+                </div>
+            </div>        
+            <div class="column">
+                <div class="row" id="all-search">
+                    <form class="column" id="pg-search">
+                        <label for="city-search" id="label-search">Search for a City</label>
+                        <input type="text" id="city-search" placeholder="Lviv, Ukraine">
+                        <input type="submit" id="search-button" class="button button-outline" value="Search">
+                    </form>
+                    <div class="column" id="searched"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row" id="main-row">
+            <section class="column" id="sec1">
+                <div class="row">
+                    <div class="column"> 
+                        <div class="title-row">
+                            <h2 id="cityName-1"></h2>
+                            <img id="weatherIcon-1">
+                        </div>
+                        <div id="cityInfo-1">
+                        </div>
+                    </div>
+                    <div class="column" id="cityInfo-2">
+                        <div class="title-row">
+                            <h2 id="cityName-2"></h2>
+                            <img id="weatherIcon-2">
+                        </div>
+                    </div>
+                </div>
+                <div id="forecast">
+                    <div class="row" id="forecast-title">
+                        <h2>5-Day, 3-Hour Forecast for<span id="forecast-city"></span></h2>
+                    </div>
+                    <div class="row" id="five-days">
+                    </div>
+                    <div class="row" id="local-forecast-title">
+                        <h2>Forecast for Philadelphia</h2>
+                    </div>
+                    <div class="row" id="five-days-2">
+                    </div>
+                </div>
+                <div id="humidity-charts">
+                    <div class="row">
+                        <figure class="column" id="heatChart-1">
+                            <img id="heat-index-chart-F" src="./assets/images/heat-index-farenheit.png" alt="Heat index chart in Farenheit">
+                        <figcaption>Image credit: <a href="https://www.calculator.net/heat-index-calculator.html">Calculator.net</a></figcaption>
+                        </figure>
+                        <figure class="column" id="heatChart-2">
+                            <img id="heat-index-chart-C" src="./assets/images/heat-index-celsius.png" alt="Heat index chart in Celsius">
+                        <figcaption>Image credit: <a href="http://srjskam.blogspot.com/2017/03/heat-index-in-celsius.html">Srjskam</a></figcaption>
+                        </figure>
+                    </div>
+                </div> 
+            </section>
+            <section class="column" id="sec2">
+                <figure>
+                    <img id="rose-of-winds" src="./assets/images/wind-rose.jpg" alt="compass rose">
+                <figcaption>Image credit: <a href="https://radar24.pl/en/wind-direction/">Radar24</a></figcaption>
+                </figure>
+                <figure>
+                    <img id="UV-index-chart" src="./assets/images/uv-index-infographic.webp" alt="UV index chart">
+                <figcaption>Image credit: <a href="https://www.accuweather.com/en/weather-news/how-to-use-the-uv-index-to-protect-yourself-from-the-suns-harmful-rays-2/432603">AccuWeather</a></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <footer class="row">
+        <p>2024 - Made with love by <a id="misfit" href="https://github.com/JamieThompson101">Jamie Thompson</a> using <a id="openweathermap" href="https://openweathermap.org/">OpenWeatherMap API</a> and <a id="milligram" href="https://milligram.io/">Milligram.io</a> - a minimalist CSS framework</p>
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
