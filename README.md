@@ -53,5 +53,9 @@ AccuWeather for the UV index chart
 Calculator.net for the Farenheit-based heat index chart
 Srjskam for the Celsius-based heat index chart
 
+Screenshot:
+
+![weatherforecast](https://github.com/JamieThompson101/Weather-Forecast/assets/130515437/06aded2a-5f08-4199-b0c7-949ac488c192)
+
 Link to the finished product:
 
